@@ -1,0 +1,19 @@
+{
+  "main.css": "/myPortfolio/static/css/main.edb69e98.chunk.css",
+  "main.js": "/myPortfolio/static/js/main.b263449a.chunk.js",
+  "main.js.map": "/myPortfolio/static/js/main.b263449a.chunk.js.map",
+  "runtime~main.js": "/myPortfolio/static/js/runtime~main.918aa22c.js",
+  "runtime~main.js.map": "/myPortfolio/static/js/runtime~main.918aa22c.js.map",
+  "static/js/2.b03a1b5f.chunk.js": "/myPortfolio/static/js/2.b03a1b5f.chunk.js",
+  "static/js/2.b03a1b5f.chunk.js.map": "/myPortfolio/static/js/2.b03a1b5f.chunk.js.map",
+  "index.html": "/myPortfolio/index.html",
+  "precache-manifest.577c6d0bf0a817c2b5f4f3d21c7257eb.js": "/myPortfolio/precache-manifest.577c6d0bf0a817c2b5f4f3d21c7257eb.js",
+  "service-worker.js": "/myPortfolio/service-worker.js",
+  "static/css/main.edb69e98.chunk.css.map": "/myPortfolio/static/css/main.edb69e98.chunk.css.map",
+  "static/media/im5.png": "/myPortfolio/static/media/im5.f2d9255a.png",
+  "static/media/image1.png": "/myPortfolio/static/media/image1.01c3daa3.png",
+  "static/media/image2.png": "/myPortfolio/static/media/image2.f6895a96.png",
+  "static/media/image3.png": "/myPortfolio/static/media/image3.7450b627.png",
+  "static/media/image4.png": "/myPortfolio/static/media/image4.bff31293.png",
+  "static/media/video.mp4": "/myPortfolio/static/media/video.53399bf1.mp4"
+}
