@@ -54,7 +54,8 @@ class NavBar extends Component {
                 <div className='Nav' style={{ zIndex: '2' }}>
                     {theButton}
                     <Sidebar className='NavBar' pose={this.state.isOpen ? 'open' : 'closed'} onClick={this.handleMy}>
-                        <Item className='liBar' style={{ listStyleType: 'none' }}>
+                        <div className='NavButton' onClick={this.handleMy}> <i className="fas fa-times"></i></div>   
+                    <Item className='liBar' style={{ listStyleType: 'none' }}>
                             <Link to='home'
                                 spy={true}
                                 smooth={true}
