@@ -17,7 +17,7 @@ export default class ImageOne extends Component {
                     'name': im3,
                     'project': 'Expenses',
                     'href': 'https://github.com/Roxolana4lana/reduxexpenses',
-                    'info': 'The purpose of the project is to count expenses and incomes. Created with create-react-app,react-redux. Backend is not attached to the github, created in python. Fetch requests are done with help of axios, and as far as I used redux store, I easily could get data from all the expenses and incomes to count total and display that info in separate component - Portal. I have created second version of the project, using react hooks instead of redux,and  without usage of classes. Project is done in my react boilerplate (link to github: https://github.com/Roxolana4lana/Hooks2). For navigation purposes I’ve used react-routing.Styling is created with sass, application is responsive. '
+                    'info': 'The purpose of the project is to count expenses and incomes. Created with create-react-app,react-redux. Backend is not attached to the github, created in python.Styling is created with sass, application is responsive. '
 
 
                 },

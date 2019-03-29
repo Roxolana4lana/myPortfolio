@@ -15,7 +15,6 @@ export default class Image extends Component {
         window.addEventListener('scroll', () => {
             (window.scrollY > 1450) ? this.setState({ scrolled: true }) :
                 this.setState({ scrolled: false })
-            console.log(window.scrollY)
         })
     }
 
