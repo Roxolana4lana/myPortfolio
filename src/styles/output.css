@@ -116,6 +116,7 @@ body {
   top: 90vh;
   left: 90vw;
   font-size: 3rem;
+  z-index:5;
   -webkit-animation-name: myArrow;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s;
@@ -381,13 +382,15 @@ body {
 
 .Footer {
   background-color: #020611fd;
-  z-index: 3;
+  /* z-index: 3; */
   width: 100vw;
   text-align: center;
   text-align: center; }
   @media (min-width: 1180px) {
     .Footer {
-      margin-top: 15rem;
+      /* margin-top: 15rem; */
+      padding-top:6rem;
+      color:white;
       position: absolute; } }
   @media (min-width: 312px) {
     .Footer .myContacts {
@@ -406,12 +409,12 @@ body {
       justify-content: space-around;
       width: 70%;
       margin: 1rem auto 0 auto;
-      font-size: 2rem; } }
+      font-size: 3rem; } }
   .Footer .myContacts a {
     text-decoration: none;
     color: white; }
   .Footer .rights {
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 0rem; }
     @media (min-width: 1180px) {
       .Footer .rights {
