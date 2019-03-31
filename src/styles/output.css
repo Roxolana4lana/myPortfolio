@@ -257,7 +257,7 @@ body {
     flex-direction: row;
     float: right; }
 
-.seeImage {
+/* .seeImage {
   width: 50rem;
   height: 40rem; }
   @media (min-width: 312px) {
@@ -268,7 +268,7 @@ body {
       width: 70rem; } }
   @media (min-width: 1180px) {
     .seeImage {
-      width: 60rem; } }
+      width: 60rem; } } */
 
 .hoveredLink {
   -moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
@@ -416,5 +416,25 @@ body {
     @media (min-width: 1180px) {
       .Footer .rights {
         margin-left: 3rem; } }
+
+        /* .checkIm{
+          width:30rem;
+          height:30rem;
+        } */
+
+         @media (min-width: 1180px){
+            .checkIm{
+         width:50rem;
+          height: 40rem;
+        }
+         }
+          @media (min-width: 312px) { .checkIm{
+          width:100vw;
+           height: 40rem;
+        }}
+           @media (min-width: 696px) { .checkIm{
+         width:70rem;
+           height: 40rem;
+        }}
 
 /*# sourceMappingURL=output.css.map */
