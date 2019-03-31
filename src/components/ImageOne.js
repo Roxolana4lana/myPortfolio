@@ -34,7 +34,8 @@ export default class ImageOne extends Component {
                     'name': im2,
                     'project': 'Weather App',
                     'href': 'https://github.com/Roxolana4lana/weatherApp',
-                    'info': 'Created in react, backend is not attached to the github, created in python. Project displays information about the weather and the picture of the given city. I’ve used a public api pixabay and openweatherapp. Styling is created with sass.'
+                    'info': 'Created in react, backend is not attached to the github, created in python. Project displays information about the weather and the picture of the given city. I’ve used a public api pixabay and openweatherapp. Styling is created with sass.',
+                    'path':'https://roxolana4lana.github.io/weatherApp/'
 
                 },
 
@@ -43,7 +44,8 @@ export default class ImageOne extends Component {
                     'name': im5,
                     'project': 'Image Gallery',
                     'href': 'https://github.com/Roxolana4lana/imageGallery/tree/master/imageapp',
-                    'info': 'Website of the gallery,created in react. To show the location of the gallery the  component react-google-maps was used. Styling is created with sass. '
+                    'info': 'Website of the gallery,created in react. To show the location of the gallery the  component react-google-maps was used. Styling is created with sass. ',
+                    'path':'https://roxolana4lana.github.io/imageGallery/#/'
 
                 },
                 {
@@ -51,7 +53,8 @@ export default class ImageOne extends Component {
                     'name': im4,
                     'project': 'Portfolio',
                     'href': 'https://github.com/Roxolana4lana/Portfolio/tree/master/portoapp',
-                    'info': 'Created with react. For navigation purposes I have used ‘react-scroll’. Styling is created with sass. '
+                    'info': 'Created with react. For navigation purposes I have used ‘react-scroll’. Styling is created with sass. ',
+                    'path':'https://roxolana4lana.github.io/myPortfolio/'
 
                 }
             ],
