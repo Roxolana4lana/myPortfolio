@@ -38,10 +38,3 @@ export default class Image extends Component {
 }
 
 
-// <div className='seeImage'
-//     style={{
-//         backgroundImage: `url(${this.props.name})`,
-//         backgroundPosition: 'center',
-//         backgroundSize: 'cover',
-//         position: 'relative'
-//     }}>
