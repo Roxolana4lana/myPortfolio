@@ -22,13 +22,8 @@ export default class Image extends Component {
         let scrolled = !this.state.scrolled ? { opacity: 0, transition: '5s' } : { opacity: 1, transition: '5s' }
         return (
             <div className='imageBlock'>
-                <div className='seeImage'
-                    style={{
-                        backgroundImage: `url(${this.props.name})`,
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        position: 'relative'
-                    }}>
+                <div className='seeImage' >
+                    <img className='checkIm' src={this.props.name} alt='jh'/>
                 </div>
                 <div className='imageRight' style={scrolled}><h1>{this.props.title}</h1>
                     <p>{this.props.info}</p>
@@ -41,3 +36,12 @@ export default class Image extends Component {
         )
     }
 }
+
+
+// <div className='seeImage'
+//     style={{
+//         backgroundImage: `url(${this.props.name})`,
+//         backgroundPosition: 'center',
+//         backgroundSize: 'cover',
+//         position: 'relative'
+//     }}>
