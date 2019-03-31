@@ -252,7 +252,8 @@ body {
         width: 70rem; } }
     @media (min-width: 1180px) {
       .imageBlock .imageRight {
-        width: 60rem; } }
+        width: 60rem; 
+    padding-left:3rem;} }
   .imageBlock .myButtons {
     display: flex;
     flex-direction: row;
@@ -395,11 +396,13 @@ body {
   @media (min-width: 312px) {
     .Footer .myContacts {
       display: flex;
+      color: white;
       flex-direction: column;
       font-size: 1.4rem; } }
   @media (min-width: 696px) {
     .Footer .myContacts {
       display: flex;
+      color: white;
       flex-direction: column;
       font-size: 1.8rem; } }
   @media (min-width: 1180px) {
@@ -415,6 +418,7 @@ body {
     color: white; }
   .Footer .rights {
     margin-top: 4rem;
+    color: white;
     margin-bottom: 0rem; }
     @media (min-width: 1180px) {
       .Footer .rights {
