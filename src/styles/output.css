@@ -1,23 +1,28 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+}
 
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 .container {
   max-width: 960px;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin: auto; }
+  margin: auto;
+}
 
 .App {
   height: 100vh;
-  display: flex; }
+  display: flex;
+}
 
 .header-video {
   position: absolute;
@@ -25,11 +30,13 @@ body {
   left: 0;
   width: 100vw;
   overflow: hidden;
-  height: 100vh; }
+  height: 100vh;
+}
 
 .header-video video {
   min-width: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+}
 
 .header-intro {
   height: 100vh;
@@ -39,12 +46,15 @@ body {
   left: 0;
   background-color: #020611b2;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+}
 
 .header-words {
-  margin-top: 40vh; }
-  .header-words h1 {
-    font-size: 4rem; }
+  margin-top: 40vh;
+}
+.header-words h1 {
+  font-size: 4rem;
+}
 
 .NavButton {
   position: fixed;
@@ -52,63 +62,81 @@ body {
   text-align: left;
   top: 2rem;
   left: 2rem;
-  z-index: 1000; }
+  z-index: 1000;
+  cursor: pointer;
+}
 
 .NavBar {
   position: fixed;
-  top: 0;
+  top: -1rem;
   left: 0;
   height: 100vh;
   color: white;
   padding: 12rem 2rem;
   z-index: 1000;
-  transition: 0.40s ease; }
-  @media (min-width: 312px) {
-    .NavBar {
-      width: 75%;
-      background-color: #020611fd; } }
-  @media (min-width: 696px) {
-    .NavBar {
-      width: 40%;
-      background-color: #020611cc; } }
-  @media (min-width: 1180px) {
-    .NavBar {
-      width: 20%;
-      background-color: #020611cc; } }
-  .NavBar .liBar {
-    list-style-type: none;
-    cursor: pointer;
-    margin-top: 1rem;
-    margin-bottom: 6rem; }
-    .NavBar .liBar a {
-      color: white;
-      font-size: 4rem;
-      text-decoration: none;
-      position: relative; }
-      .NavBar .liBar a:after {
-        content: '';
-        width: 0%;
-        height: 0.2rem;
-        position: absolute;
-        background: #00B4DB;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #3acfd5 0%, #3a4ed5);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #3acfd5 0%, #3a4ed5);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        bottom: 0%;
-        left: 50%;
-        border-radius: 10px;
-        transition: all 400ms ease; }
-      .NavBar .liBar a:hover {
-        color: #1b83bd;
-        padding-bottom: 0.6rem; }
-      .NavBar .liBar a:hover::after {
-        left: 0%;
-        width: 100%; }
+  transition: 0.4s ease;
+}
+@media (min-width: 312px) {
+  .NavBar {
+    width: 75%;
+    height: 100vh;
+    background-color: #020611fd;
+  }
+}
+@media (min-width: 696px) {
+  .NavBar {
+    width: 40%;
+    height: 100vh;
+    background-color: #020611;
+  }
+}
+@media (min-width: 1180px) {
+  .NavBar {
+    width: 20%;
+    height: 100vh;
+    background-color: #020611;
+  }
+}
+.NavBar .liBar {
+  list-style-type: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+.NavBar .liBar a {
+  color: white;
+  font-size: 4rem;
+  text-decoration: none;
+  position: relative;
+}
+.NavBar .liBar a:after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  position: absolute;
+  background: #00b4db;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3acfd5 0%, #3a4ed5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3acfd5 0%, #3a4ed5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  bottom: 0%;
+  left: 50%;
+  border-radius: 10px;
+  transition: all 400ms ease;
+}
+.NavBar .liBar a:hover {
+  color: #1b83bd;
+  padding-bottom: 0.6rem;
+}
+.NavBar .liBar a:hover::after {
+  left: 0%;
+  width: 100%;
+}
 
 .notArrow {
-  display: none; }
+  display: none;
+}
 
 .arrow {
   position: fixed;
@@ -116,7 +144,7 @@ body {
   top: 90vh;
   left: 90vw;
   font-size: 3rem;
-  z-index:5;
+  z-index: 5;
   -webkit-animation-name: myArrow;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s;
@@ -124,140 +152,197 @@ body {
   -webkit-animation-iteration-count: 7;
   animation-name: myArrow;
   animation-duration: 2s;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
 
 @keyframes myArrow {
   0% {
-    top: 90vh; }
+    top: 90vh;
+  }
   25% {
-    top: 89.8vh; }
+    top: 89.8vh;
+  }
   50% {
-    top: 89.6vh; }
+    top: 89.6vh;
+  }
   75% {
-    top: 89.8vh; }
+    top: 89.8vh;
+  }
   100% {
-    top: 90vh; } }
+    top: 90vh;
+  }
+}
 .About {
   background-color: #020611;
   width: 100vw;
   color: white;
   padding-top: 10vh;
-  text-align: center; }
-  @media (min-width: 312px) {
-    .About {
-      height: 100%; } }
-  @media (min-width: 696px) {
-    .About {
-      height: 100%; } }
-  @media (min-width: 1180px) {
-    .About {
-      height: 100vh; } }
-  .About .addInfo {
-    margin: 7rem 4rem; }
-  .About h3 {
-    font-size: 2rem; }
-  .About .pAbout {
-    position: relative;
-    font-size: 3rem; }
+  text-align: center;
+}
+@media (min-width: 312px) {
+  .About {
+    height: 100%;
+  }
+}
+@media (min-width: 696px) {
+  .About {
+    height: 100%;
+  }
+}
+@media (min-width: 1180px) {
+  .About {
+    height: 100vh;
+  }
+}
+.About .addInfo {
+  margin: 3rem 4rem;
+}
+.About h3 {
+  font-size: 2rem;
+}
+.About .pAbout {
+  position: relative;
+  font-size: 3rem;
+}
 
 .myIcons {
   margin-top: 1rem;
   color: white;
   font-size: 8rem;
-  display: grid; }
-  @media (min-width: 312px) {
-    .myIcons {
-      grid-template-columns: auto auto; } }
-  @media (min-width: 696px) {
-    .myIcons {
-      grid-template-columns: auto auto auto; } }
-  @media (min-width: 1180px) {
-    .myIcons {
-      grid-template-columns: auto auto auto; } }
+  display: grid;
+}
+@media (min-width: 312px) {
+  .myIcons {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 696px) {
+  .myIcons {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (min-width: 1180px) {
+  .myIcons {
+    grid-template-columns: auto auto auto;
+  }
+}
 
 .theIcon {
   -webkit-animation: myIcon 5s infinite linear;
   animation: myIcon 5s infinite linear;
-  margin: 5rem; }
+  margin: 5rem;
+}
 
 @keyframes myIcon {
   from {
-    transform: rotateY(0deg); }
+    transform: rotateY(0deg);
+  }
   to {
-    transform: rotateY(359deg); } }
+    transform: rotateY(359deg);
+  }
+}
 .mainForm {
   background-color: #020611;
   height: 100vh;
   width: 100vw;
   color: white;
   padding-top: 10vh;
-  text-align: center; }
-  @media (min-width: 312px) {
-    .mainForm {
-      height: 100%; } }
-  @media (min-width: 696px) {
-    .mainForm {
-      height: 100%; } }
-  @media (min-width: 1180px) {
-    .mainForm {
-      height: 100vh; } }
-  .mainForm h2 {
-    position: relative;
-    font-size: 3rem;
-    text-align: center; }
-  .mainForm h1 {
-    font-size: 3rem; }
+  text-align: center;
+}
+@media (min-width: 312px) {
+  .mainForm {
+    height: 100%;
+  }
+}
+@media (min-width: 696px) {
+  .mainForm {
+    height: 100%;
+  }
+}
+@media (min-width: 1180px) {
+  .mainForm {
+    height: 100vh;
+  }
+}
+.mainForm h2 {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+}
+.mainForm h1 {
+  font-size: 3rem;
+}
 
 .wrapper {
-  text-align: center; }
-  .wrapper h2 {
-    font-size: 3rem;
-    margin-bottom: 7rem; }
+  text-align: center;
+}
+.wrapper h2 {
+  font-size: 3rem;
+  margin-bottom: 7rem;
+}
 
 .Bla {
   height: 100%;
   width: 100vw;
   color: white;
   background-color: #020611;
-  padding-top: 10vh; }
+  padding-top: 10vh;
+}
 
 .imageBlock {
   display: flex;
   margin-bottom: 2rem;
-  justify-content: space-around; }
-  @media (min-width: 312px) {
-    .imageBlock {
-      flex-direction: column; } }
-  @media (min-width: 696px) {
-    .imageBlock {
-      flex-direction: column;
-      padding: 0 9%; } }
-  @media (min-width: 1180px) {
-    .imageBlock {
-      flex-direction: row;
-      justify-content: space-around; } }
-  .imageBlock h1 {
-    color: #fff;
-    margin-bottom: 1rem;
-    font-size: 3rem; }
-  .imageBlock .imageRight {
-    font-size: 2rem;
-    text-align: right; }
-    @media (min-width: 312px) {
-      .imageBlock .imageRight {
-        width: 100%;
-        padding-right: 2rem; } }
-    @media (min-width: 696px) {
-      .imageBlock .imageRight {
-        width: 70rem; } }
-    @media (min-width: 1180px) {
-      .imageBlock .imageRight {
-        width: 60rem; 
-    padding-left:3rem;} }
-  .imageBlock .myButtons {
-    display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 312px) {
+  .imageBlock {
+    flex-direction: column;
+  }
+}
+@media (min-width: 696px) {
+  .imageBlock {
+    flex-direction: column;
+    padding: 0 9%;
+  }
+}
+@media (min-width: 1180px) {
+  .imageBlock {
     flex-direction: row;
-    float: right; }
+    justify-content: space-around;
+  }
+}
+.imageBlock h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.imageBlock .imageRight {
+  font-size: 2rem;
+  text-align: right;
+}
+@media (min-width: 312px) {
+  .imageBlock .imageRight {
+    width: 100%;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 696px) {
+  .imageBlock .imageRight {
+    width: 70rem;
+  }
+}
+@media (min-width: 1180px) {
+  .imageBlock .imageRight {
+    width: 60rem;
+    padding-left: 3rem;
+  }
+}
+.imageBlock .myButtons {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
 
 /* .seeImage {
   width: 50rem;
@@ -291,157 +376,187 @@ body {
   font-weight: bold;
   padding: 6px 24px;
   margin: 0 1rem;
-  text-decoration: none; }
-  .hoveredLink:hover {
-    background: -moz-linear-gradient(top, #3a4ed5 0%, #3acfd5 100%);
-    background: -webkit-linear-gradient(top, #3a4ed5 0%, #3acfd5 100%);
-    background: linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
-    background: -o-linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
-    background: -ms-linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
-    background-color: #1e62d0; }
-  .hoveredLink:active {
-    position: relative;
-    top: 1px; }
+  text-decoration: none;
+}
+.hoveredLink:hover {
+  background: -moz-linear-gradient(top, #3a4ed5 0%, #3acfd5 100%);
+  background: -webkit-linear-gradient(top, #3a4ed5 0%, #3acfd5 100%);
+  background: linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
+  background: -o-linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
+  background: -ms-linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
+  background-color: #1e62d0;
+}
+.hoveredLink:active {
+  position: relative;
+  top: 1px;
+}
 
 .myForm {
   margin-top: 5rem;
   margin-bottom: 2rem;
-  font-size: 3rem; }
-  .myForm .formButton {
-    background: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-    background: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-    background: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
-    border: none;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    color: white;
-    transition: 0.40s ease;
-    outline: none; }
-    .myForm .formButton:hover {
-      background: -moz-linear-gradient(top, #3a4ed5 0%, #3acfd5 100%);
-      background: -webkit-linear-gradient(top, #3a4ed5 0%, #3acfd5 100%);
-      background: linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
-      background: -o-linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
-      background: -ms-linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
-      margin-top: 0rem; }
-  .myForm .formPart {
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem; }
-    .myForm .formPart input,
-    .myForm .formPart textarea {
-      background: transparent;
-      width: 20rem;
-      border: 0;
-      color: #f2f2f2;
-      font-size: 2rem;
-      height: 30px;
-      line-height: 30px;
-      outline: none !important;
-      border: 0.1rem solid transparent;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-      -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-      border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
-      border-image-slice: 1;
-      overflow: scroll;
-      transition: 0.25s ease;
-      padding: 2rem 0; }
-      .myForm .formPart input textarea,
-      .myForm .formPart textarea textarea {
-        overflow: scroll; }
-      .myForm .formPart input:hover,
-      .myForm .formPart textarea:hover {
-        border: 0.1rem solid transparent;
-        -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-        -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-        border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
-        border-image-slice: 1;
-        background: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-        background: linear-gradient(top, #3ad0d57e 0%, #3a4fd57e 100%); }
-    .myForm .formPart input::-moz-focus-inner {
-      border: 0; }
+  font-size: 3rem;
+}
+.myForm .formButton {
+  background: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  background: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  background: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+  border: none;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s ease;
+  outline: none;
+}
+.myForm .formButton:hover {
+  background: -moz-linear-gradient(top, #3a4ed5 0%, #3acfd5 100%);
+  background: -webkit-linear-gradient(top, #3a4ed5 0%, #3acfd5 100%);
+  background: linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
+  background: -o-linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
+  background: -ms-linear-gradient(to right, #3a4ed5 0%, #3acfd5 100%);
+  margin-top: 0rem;
+}
+.myForm .formPart {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.myForm .formPart input,
+.myForm .formPart textarea {
+  background: transparent;
+  width: 20rem;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 2rem;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  border: 0.1rem solid transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+  border-image-slice: 1;
+  overflow: scroll;
+  transition: 0.25s ease;
+  padding: 2rem 0;
+}
+.myForm .formPart input textarea,
+.myForm .formPart textarea textarea {
+  overflow: scroll;
+}
+.myForm .formPart input:hover,
+.myForm .formPart textarea:hover {
+  border: 0.1rem solid transparent;
+  -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+  border-image-slice: 1;
+  background: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+  background: linear-gradient(top, #3ad0d57e 0%, #3a4fd57e 100%);
+}
+.myForm .formPart input::-moz-focus-inner {
+  border: 0;
+}
 
 .errorMessage {
   color: red;
   font-size: 1.5rem;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .sendMessage {
   color: green;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .Footer {
   background-color: #020611fd;
   /* z-index: 3; */
   width: 100vw;
   text-align: center;
-  text-align: center; }
-  @media (min-width: 1180px) {
-    .Footer {
-      /* margin-top: 15rem; */
-      padding-top:6rem;
-      color:white;
-      position: absolute; } }
-  @media (min-width: 312px) {
-    .Footer .myContacts {
-      display: flex;
-      color: white;
-      flex-direction: column;
-      font-size: 1.4rem; } }
-  @media (min-width: 696px) {
-    .Footer .myContacts {
-      display: flex;
-      color: white;
-      flex-direction: column;
-      font-size: 1.8rem; } }
-  @media (min-width: 1180px) {
-    .Footer .myContacts {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 70%;
-      margin: 1rem auto 0 auto;
-      font-size: 3rem; } }
-  .Footer .myContacts a {
-    text-decoration: none;
-    color: white; }
-  .Footer .rights {
-    margin-top: 4rem;
+  text-align: center;
+}
+@media (min-width: 1180px) {
+  .Footer {
+    /* margin-top: 15rem; */
+    padding-top: 6rem;
     color: white;
-    margin-bottom: 0rem; }
-    @media (min-width: 1180px) {
-      .Footer .rights {
-        margin-left: 3rem; } }
+    position: absolute;
+  }
+}
+@media (min-width: 312px) {
+  .Footer .myContacts {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 696px) {
+  .Footer .myContacts {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1180px) {
+  .Footer .myContacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    margin: 1rem auto 0 auto;
+    font-size: 3rem;
+  }
+}
+.Footer .myContacts a {
+  text-decoration: none;
+  color: white;
+}
+.Footer .rights {
+  margin-top: 4rem;
+  color: white;
+  margin-bottom: 0rem;
+}
+@media (min-width: 1180px) {
+  .Footer .rights {
+    margin-left: 3rem;
+  }
+}
 
-        /* .checkIm{
+/* .checkIm{
           width:30rem;
           height:30rem;
         } */
 
-         @media (min-width: 1180px){
-            .checkIm{
-         width:50rem;
-          height: 40rem;
-        }
-         }
-          @media (min-width: 312px) { .checkIm{
-          width:100vw;
-           height: 40rem;
-        }}
-           @media (min-width: 696px) { .checkIm{
-         width:70rem;
-           height: 40rem;
-        }}
+@media (min-width: 1180px) {
+  .checkIm {
+    width: 50rem;
+    height: 40rem;
+  }
+}
+@media (min-width: 312px) {
+  .checkIm {
+    width: 100vw;
+    height: 40rem;
+  }
+}
+@media (min-width: 696px) {
+  .checkIm {
+    width: 70rem;
+    height: 40rem;
+  }
+}
 
 /*# sourceMappingURL=output.css.map */
